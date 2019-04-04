@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /export
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL = TCP)(HOST=172.16.149.151)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)))
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: orcl
+    password: orcl
